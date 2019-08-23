@@ -12,6 +12,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  fullname,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -26,6 +27,7 @@ export const BlogPostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <p>{fullname}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
