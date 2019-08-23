@@ -5,6 +5,8 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.7.0",
+    "eslint": "^6.2.1",
+    "eslint-plugin-react": "^7.14.3",
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.0.6",
@@ -30,6 +32,8 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "styled-components": "^4.3.2",
+    "stylelint": "^10.1.0",
     "uuid": "^3.2.1"
   },
   "keywords": [
