@@ -1,7 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: eky/gatsby-starter-netlify-cms
   branch: master
 
+publish_mode: editorial_workflow
 media_folder: static/img
 public_folder: /img
 
@@ -9,6 +11,7 @@ collections:
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
+    preview_path: blog/{{slug}}
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
