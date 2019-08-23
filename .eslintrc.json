@@ -1,0 +1,18 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "babel-eslint",
+  "extends": [ "eslint:recommended", "plugin:react/recommended" ],
+  "globals": {
+    "graphql": false
+  },
+  "rules": {
+    "indent": [ "error", 2, { "SwitchCase": 1 } ],
+    "quotes": [ "error", "single" ],
+    "semi": [ "error", "always" ],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "react/react-in-jsx-scope": "off"
+  }
+}
