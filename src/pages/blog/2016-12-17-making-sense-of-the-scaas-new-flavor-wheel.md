@@ -1,6 +1,7 @@
 ---
 templateKey: blog-post
 title: Page Title test
+fullname: '{"firstname":"1","middlename":"2","lastname":"3"}'
 date: 2016-12-17T15:04:10.000Z
 description: >-
   The Coffee Taster’s Flavor Wheel, the official resource used by coffee
