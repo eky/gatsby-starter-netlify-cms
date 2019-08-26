@@ -1,6 +1,10 @@
 ---
 templateKey: blog-post
 title: Page Title test
+langs:
+  field-1: '1'
+  field-2: '2'
+  field-3: '3'
 fullname: '{"firstname":"1","middlename":"2","lastname":"3"}'
 date: 2016-12-17T15:04:10.000Z
 description: >-
