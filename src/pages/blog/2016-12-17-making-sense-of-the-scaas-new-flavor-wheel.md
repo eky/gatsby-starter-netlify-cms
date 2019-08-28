@@ -1,6 +1,9 @@
 ---
 templateKey: blog-post
 title: Page Title test
+select-test:
+  - cat
+  - dolphin
 langs:
   description__en: >-
     The Coffee Taster’s Flavor Wheel, the official resource used by coffee
