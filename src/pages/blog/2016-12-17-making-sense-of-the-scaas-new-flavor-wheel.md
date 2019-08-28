@@ -2,20 +2,14 @@
 templateKey: blog-post
 title: Page Title test
 select-test:
-  - cat
+  - pig
   - dolphin
 langs:
-  description__en: ''
-  description__ja: コーヒーテイスターが使用する公式リソースであるCoffee Tasterのフレーバーホイールは、今年初めて修正されました。
-  description__zh-HK: ''
   en:
     description: >-
       The Coffee Taster’s Flavor Wheel, the official resource used by coffee
       tasters, has been revised for the first time this year.
     subtitle: Sub title test
-  subtitle__en: ''
-  subtitle__ja: サブタイトルテスト
-  subtitle__zh-HK: ''
   zh-HK:
     description: Coffee Taster's Flavor Wheel是咖啡品嚐者使用的官方資源，今年首次進行了修訂。
     subtitle: 子標題測試
