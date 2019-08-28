@@ -17,6 +17,16 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Language Switcher"
+        name: "langs"
+        widget: "language-switcher"
+        fields:
+          - {label: "Sub Title", name: "subtitle__en", widget: "string", language: "en"}
+          - {label: "Description", name: "description__en", widget: "markdown", language: "en"}
+          - {label: "Sub Title", name: "subtitle__zh-HK", widget: "string", language: "zh-HK"}
+          - {label: "Description", name: "description__zh-HK", widget: "markdown", language: "zh-HK"}
+          - {label: "Sub Title", name: "subtitle__ja", widget: "string", , language: "ja"}
+          - {label: "Description", name: "description__ja", widget: "markdown", , language: "ja"}
       - {label: "Full Name", name: "fullname", widget: "fullname"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
