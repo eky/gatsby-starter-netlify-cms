@@ -2,10 +2,14 @@
 templateKey: blog-post
 title: Page Title test
 langs:
-  field-1--en: en 1
-  field-1--zh-HK: zh 1
-  field-2--en: en 2
-  field-3--en: en 3
+  description__en: >-
+    The Coffee Taster’s Flavor Wheel, the official resource used by coffee
+    tasters, has been revised for the first time this year.
+  description__ja: コーヒーテイスターが使用する公式リソースであるCoffee Tasterのフレーバーホイールは、今年初めて修正されました。
+  description__zh-HK: Coffee Taster's Flavor Wheel是咖啡品嚐者使用的官方資源，今年首次進行了修訂。
+  subtitle__en: Sub title test
+  subtitle__ja: サブタイトルテスト
+  subtitle__zh-HK: 子標題測試
 fullname: '{"firstname":"1","middlename":"2","lastname":"3"}'
 date: 2016-12-17T15:04:10.000Z
 description: >-
