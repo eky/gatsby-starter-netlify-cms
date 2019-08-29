@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Page Title test 123
+title: Page Title test
 select-test:
   - pig
   - dolphin
