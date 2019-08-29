@@ -15,7 +15,7 @@ const styleStrings = {
   `,
 };
 
-export default class ObjectWithLanguageSwitcherControl extends React.Component {
+export default class ObjectWithLanguageControl extends React.Component {
   componentValidate = {};
 
   static propTypes = {

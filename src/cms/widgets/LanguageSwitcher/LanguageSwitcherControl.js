@@ -1,16 +1,17 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import ImmutablePropTypes from 'react-immutable-proptypes';
 import CMS from 'netlify-cms-app';
-import { Map, List } from 'immutable';
+import { Map } from 'immutable';
 
-import ObjectControl from './ObjectWithLanguageSwitcherControl';
+import ObjectControl from './ObjectWithLanguageControl';
 
 class LanguageSwitcherControl extends PureComponent {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedLanguage: props.defaultLanguage,
+      selectedLanguage: props.field.get('defaultLanguage'),
     };
 
     this.handleLanguageChange = this.handleLanguageChange.bind(this);
@@ -24,22 +25,23 @@ class LanguageSwitcherControl extends PureComponent {
     const {
       forID,
       classNameWrapper,
-      languages,
+      field,
     } = this.props;
     const {
       selectedLanguage,
     } = this.state;
+    const languages = field.get('languages');
 
-    const LanguageSelectControl = CMS.getWidget('select').control;
+    const SelectControl = CMS.getWidget('select').control;
 
     return (
       <div className={classNameWrapper}>
-        <LanguageSelectControl
+        <SelectControl
           value={selectedLanguage}
           onChange={this.handleLanguageChange}
           forID={`${forID}-LanguageSelectControl`}
           classNameWrapper={classNameWrapper}
-          field={Map({ options: List(languages) })}
+          field={Map({ options: languages })}
         />
         <ObjectControl language={selectedLanguage} {...this.props} />
       </div>
@@ -50,8 +52,15 @@ class LanguageSwitcherControl extends PureComponent {
 LanguageSwitcherControl.propTypes = {
   forID: PropTypes.string.isRequired,
   classNameWrapper: PropTypes.string.isRequired,
-  defaultLanguage: PropTypes.string.isRequired,
-  languages: PropTypes.array.isRequired,
+  field: ImmutablePropTypes.contains({
+    defaultLanguage: PropTypes.string.isRequired,
+    languages: ImmutablePropTypes.listOf(
+      ImmutablePropTypes.contains({
+        label: PropTypes.string.isRequired,
+        value: PropTypes.string.isRequired,
+      }),
+    ),
+  }),
 };
 
 export default LanguageSwitcherControl;

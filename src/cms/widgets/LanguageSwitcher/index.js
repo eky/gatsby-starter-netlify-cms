@@ -1,5 +1,5 @@
 import LanguageSwitcherControl from './LanguageSwitcherControl';
-import ObjectWithLanguageSwitcherControl from './ObjectWithLanguageSwitcherControl';
+import ObjectWithLanguageControl from './ObjectWithLanguageControl';
 
 const Widget = (opts = {}) => ({
   name: 'language-switcher',
@@ -7,4 +7,4 @@ const Widget = (opts = {}) => ({
   ...opts,
 });
 
-export { Widget, LanguageSwitcherControl, ObjectWithLanguageSwitcherControl };
+export { Widget, LanguageSwitcherControl, ObjectWithLanguageControl };
