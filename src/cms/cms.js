@@ -8,7 +8,6 @@ import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
-import { LanguageSwitcherControl } from './widgets/LanguageSwitcher/';
 
 import { FullNameControl,  FullNamePreview } from './widgets/FullName';
 import { LanguageSwitcherControl } from './widgets/LanguageSwitcher/';
