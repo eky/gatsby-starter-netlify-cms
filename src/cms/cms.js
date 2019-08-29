@@ -10,6 +10,7 @@ import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 
 import { FullNameControl,  FullNamePreview } from './widgets/FullName';
+import { LanguageSwitcherControl } from './widgets/LanguageSwitcher/';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
@@ -22,3 +23,4 @@ CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 
 CMS.registerWidget('fullname', FullNameControl, [ FullNamePreview ]);
+CMS.registerWidget('language-switcher', LanguageSwitcherControl);
