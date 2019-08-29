@@ -17,6 +17,14 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
       - {label: "Title", name: "title", widget: "string"}
+      - label: "Select test"
+        name: "select-test"
+        widget: "select"
+        multiple: true
+        options:
+          - { label: '🐷', value: 'pig' }
+          - { label: '🐱', value: 'cat' }
+          - { label: '🐬', value: 'dolphin' }
       - label: "Language Switcher"
         name: "langs"
         widget: "language-switcher"
