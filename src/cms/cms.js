@@ -1,24 +1,26 @@
-import CMS from 'netlify-cms-app'
-import uploadcare from 'netlify-cms-media-library-uploadcare'
-import cloudinary from 'netlify-cms-media-library-cloudinary'
+import CMS from 'netlify-cms-app';
+import uploadcare from 'netlify-cms-media-library-uploadcare';
+import cloudinary from 'netlify-cms-media-library-cloudinary';
 
-import styles from '../components/all.sass'
+// import styles from '../components/all.sass'
 
-import AboutPagePreview from './preview-templates/AboutPagePreview'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
-import ProductPagePreview from './preview-templates/ProductPagePreview'
-import IndexPagePreview from './preview-templates/IndexPagePreview'
+import AboutPagePreview from './preview-templates/AboutPagePreview';
+import BlogPostPreview from './preview-templates/BlogPostPreview';
+import ProductPagePreview from './preview-templates/ProductPagePreview';
+import IndexPagePreview from './preview-templates/IndexPagePreview';
 
-import { FullNameControl,  FullNamePreview } from './widgets/FullName';
+import { FullNameControl, FullNamePreview } from './widgets/FullName';
+import { LanguageSwitcherControl } from './widgets/LanguageSwitcher/';
 
 CMS.registerMediaLibrary(uploadcare);
 CMS.registerMediaLibrary(cloudinary);
 
-CMS.registerPreviewStyle(styles)
+// CMS.registerPreviewStyle(styles)
 
-CMS.registerPreviewTemplate('index', IndexPagePreview)
-CMS.registerPreviewTemplate('about', AboutPagePreview)
-CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('index', IndexPagePreview);
+CMS.registerPreviewTemplate('about', AboutPagePreview);
+CMS.registerPreviewTemplate('products', ProductPagePreview);
+CMS.registerPreviewTemplate('blog', BlogPostPreview);
 
 CMS.registerWidget('fullname', FullNameControl, [ FullNamePreview ]);
+CMS.registerWidget('language-switcher', LanguageSwitcherControl);
